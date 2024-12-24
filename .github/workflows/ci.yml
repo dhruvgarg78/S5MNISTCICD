@@ -30,4 +30,6 @@ jobs:
       run: python scripts/train.py
 
     - name: Run Tests
-      run: python scripts/test.py
+      run: |
+        cd scripts
+        python test.py
